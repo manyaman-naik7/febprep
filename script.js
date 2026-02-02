@@ -11,7 +11,7 @@ function selectOption(option) {
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'You sure?'; 
+        document.getElementById('no-button').innerText = 'Need more convincing? Look at me then'; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -65,7 +65,7 @@ function displayCatHeart() {
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
     // Set the source (file path) for the cat-heart image
-    catHeartImage.src = 'cat-heart.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
+    catHeartImage.src = 'collage.jpg'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
     catHeartImage.alt = 'Cat Heart';
     // When the cat-heart image is fully loaded, add it to the image container
@@ -74,7 +74,9 @@ function displayCatHeart() {
         // Hide the options container
         document.getElementById('options').style.display = 'none';
     };
+
 }
 
 // Display the cat.gif initially
 displayCat();
+
