@@ -17,6 +17,9 @@ body {
 
 #image-container {
     /* This container will hold the images */
+    width: 100%;
+    height: auto;
+    overflow: visible;
 }
 
 #question {
@@ -38,3 +41,4 @@ button {
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
 }
+
